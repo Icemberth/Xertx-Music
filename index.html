@@ -1,47 +1,113 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Index | Xertz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Loading Bootstrap -->
-    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Loading Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="backgroundHome"></div>
-    <div class="container">
-      <div class="StepShow">      
-          <h3 class="LogoName">Xertx Music</h3>
-          <figure>
-            <img src="img/SenaMusic.png" class="CommingSoon" alt="SenaMusic">
-            <!-- https://lh3.ggpht.com/Qhl7dZJRWWS4UyhWTnY8F_reE5I5yqafctq5KZKAHwHJRFax5mZR7brPIlOASlRQ1PW-=w300-->
-            <!-- http://globalapk.com/uploads/posts/2014-07/1405179160_unnamed.png -->
-          </figure>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xertx Music</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <style>
+      .special-caption{
+        top: 1% !important;
+    left: 10% !important;
+    width: 83% !important;    
+      }
+      #logo{
+        width: 300px;
+        height: auto;
+      }
+     @media only screen and (min-width : 320px) and (max-width : 520px){
+    .special-caption h3{
+      display: none;
+    }
+    .special-caption {
+      height: 400px;
+      overflow: auto;
+    }
+      }
+      </style>
+</head>
+<body>
+   <div class="slider fullscreen">
+    <ul class="slides">
+      <li>
+        <img src="img/coverbackground.png"> <!-- random image -->
+        <div class="caption special-caption center-align">
+          <h4>Xertx Music</h4>
+          <h5 class="light grey-text text-lighten-3">¡Tú Música Donde Quieras!</h5>
+          <img id="logo"  class="responsive-img" src="../img/XertxMusic.png" alt="Xertx Music">
+        </div>
+      </li>
+      <li>
+        <img src="img/coverbackground.png"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Música Ilimitada Gratis</h3>
+          <h5 class="light grey-text text-lighten-3">Busca, Comparte Y descubre Nueva Música Con Tus Amigos
+Estés Donde Estés, Xertx Music Te Acompaña
+Crea PlayList De Tus Canciones Favoritas</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/coverbackground.png"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/coverbackground.png"> <!-- random image -->
+        <div class="caption special-caption center-align">
+          <h5>¿Que esperas?<br> ¡Ingresa Ya!</h5>
+          <div class="light grey-text text-lighten-3">
+            <button class="btn indigo darken-4 waves-effect waves-light"><i class="mdi-content-send right"></i>Ingresa Con Facebook</button>            
+            <br>
+            <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">Nombre</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Apellido</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="username" type="text" class="validate">
+              <label for="username">Usuario</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Contraseña</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Correo</label>
+            </div>
+          </div>          
+        </form>
+        <button class="btn orange darken-4 waves-effect waves-light"> <i class="mdi-social-public right"></i> Registrate</button>
       </div>
-      <p>Muy Pronto</p>
-      <p>05/10/2015</p>
-    </div>
-    <footer class="CommingSoon">
-      <h3>Proporcionado Por Sena Music</h3>
-      <span>COPYRIGHT © 2015 Sena Music. Prohibida su reproducción total o parcial, así como su traducción a cualquier idioma sin autorización escrita de su titular.</span>
-    </footer>
-    <!-- /.container -->
-    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
-    <script src="js/vendor/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/flat-ui.min.js"></script>    
-    <!-- SenaMusic App Facebook Connect -->
-    <!-- -->
-  </body>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>        
+
+   <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+   $(document).ready(function(){
+      $('.slider').slider({full_width: true,Interval: 500});
+    });
+   </script>
+</body>
 </html>
